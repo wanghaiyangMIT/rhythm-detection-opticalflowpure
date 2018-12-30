@@ -10,8 +10,10 @@ import numpy as np
 import scipy.stats as stats
 import torch
 from torch.utils.data import DataLoader#, Subset
-
-import models
+if args.shift_with_attention:
+    import modelsshift
+else:
+    import models
 from data_loader import get_dataset
 from utils import collate_fn, DataError
 
