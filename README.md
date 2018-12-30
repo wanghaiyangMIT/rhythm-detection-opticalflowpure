@@ -1,7 +1,7 @@
 
 ## Rhythm-detection-noshift
 Rhythm-detection-noshift is a sample version for video rhythm of our CV-Class project. It's based on optical flow, which as a feature inputed to our model.We have ever tried some features such as **pose** from [Alpha Pose](http://www.mvig.org/research/alphapose.html), **scene change** from [Pyscenedetectlib](https://github.com/Breakthrough/PySceneDetect),**optical flow** from [gpu-flow](https://github.com/feichtenhofer/gpu_flow)based on opencv-c++ .**Our dataset** is a MV with a strong rhythm that was manually downloaded from the music station. As for the **label** ,we use [librosa](https://github.com/librosa/librosa) to generate rhythm strength.  
-## rhy-deteciton-shiftlayer
+## Rhy-deteciton-shiftlayer
 our code provide shiftlayer version with attention in modelsshift.py ,if you wangt to use it ,you need change it in train.py , open it with --shift_with_attention, and import **modelsshift** ,and change the models in main function with modelsshift, i think it will be ok.
 
 ## Contents
@@ -32,7 +32,7 @@ our code provide shiftlayer version with attention in modelsshift.py ,if you wan
   time
   ```
 ## Quick Start
-- **Rhythm-detection-shiftlayer**:  Run Rhythm-detection-shiftlayer for optical flow feature extracted by our code (extract frames 4fps and each has a optical flow 224x224x3) for features in a folder ,but the feature organized not fixed, so you need to read the dataloader to organize your own dataset,there we provide a video with no shift basic version, you can organized your optical flow , scene change, pose feature dataset.If you want to use shiftlayer version, you can change the import models whith modelsshift,main function also need change the models as modelsshift.Basic version as follows: 
+- **Rhythm-detection-noshiftlayer**:  Run Rhythm-detection-shiftlayer for optical flow feature extracted by our code (extract frames 4fps and each has a optical flow 224x224x3) for features in a folder ,but the feature organized not fixed, so you need to read the dataloader to organize your own dataset,there we provide a video with no shift basic version, you can organized your optical flow , scene change, pose feature dataset.If you want to use shiftlayer version, you can change the import models whith modelsshift,main function also need change the models as modelsshift.Basic version as follows: 
 ```
 python train.py --audio_dir --video_dir --save_dir --device  
 ```
