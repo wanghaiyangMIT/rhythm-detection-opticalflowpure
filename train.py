@@ -11,7 +11,7 @@ import scipy.stats as stats
 import torch
 from torch.utils.data import DataLoader#, Subset
 
-import models
+import modelsshift
 from data_loader import get_dataset
 from utils import collate_fn, DataError
 
