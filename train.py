@@ -10,10 +10,7 @@ import numpy as np
 import scipy.stats as stats
 import torch
 from torch.utils.data import DataLoader#, Subset
-if args.shift_with_attention:
-    import modelsshift
-else:
-    import models
+import models
 from data_loader import get_dataset
 from utils import collate_fn, DataError
 
@@ -49,7 +46,7 @@ parser.add_argument('--dim_video',      type=int, default=224,  help='H and W of
 parser.add_argument('--model',          type=str, default='EndToEnd')
 parser.add_argument('--use_crf',        type=int, default=1,    help='whether to use CRF layer to predict, must use 0/1 label')
 parser.add_argument('--vgg_init',       type=int, default=1,    help='whether to initialize the VGG net with pre-trained params')
-parser.add_argument('--shift_with_attention', type=int, default=0)
+#parser.add_argument('--shift_with_attention', type=int, default=0)
 
 args = parser.parse_args()
 if len(args.save_dir) == 0:
