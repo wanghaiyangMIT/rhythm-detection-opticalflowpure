@@ -35,7 +35,10 @@ our code provide shiftlayer version with attention in modelsshift.py ,if you wan
 ```
 python train.py --audio_dir --video_dir --save_dir --device  
 ```
-you can see the options in train.py, if you meet some problem ,please contact me ,because the data preparetion is complexed.
+You can see the options details in train.py.
+- **Rhythm-detection-shiftlayer:
+models has been implemented in modelsshift.py, it's structure is similar with models, so you just change the import  and main function in train.py. 
+If you meet some problem ,please contact me ,because the data preparetion is complexed.
 
 
 ## Output
