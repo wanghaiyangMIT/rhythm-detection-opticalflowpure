@@ -1,11 +1,11 @@
 
 ## Rhythm-detection-noshift
 Rhythm-detection-noshift is a sample version for video rhythm of our CV-Class project. It's based on optical flow, which as a feature inputed to our model.We have ever tried some features such as **pose** from [Alpha Pose](http://www.mvig.org/research/alphapose.html), **scene change** from [Pyscenedetectlib](https://github.com/Breakthrough/PySceneDetect),**optical flow** from [gpu-flow](https://github.com/feichtenhofer/gpu_flow)based on opencv-c++ .**Our dataset** is a MV with a strong rhythm that was manually downloaded from the music station. As for the **label** ,we use [librosa](https://github.com/librosa/librosa) to generate rhythm strength.  
-## Rhythm-deteciton-shiftlayer
+## Rhythm-detection-shiftlayer
 our code provide shiftlayer version with attention in modelsshift.py ,if you wangt to use it ,you need change it in train.py , open it with --shift_with_attention, and import **modelsshift** ,and change the models in main function with modelsshift, i think it will be ok.
 
 ## Contents
-- [Rhythm-detection-noshift](rhythm-detection-noshift)
+- [Rhythm-detection-noshift](#rhythm-detection-noshift)
 - [Rhythm-detection-shiftlayer](#rhythm-detection-shiftlayer)
 - [Installation](#installation)
 - [Quick Start](#quick-start)
